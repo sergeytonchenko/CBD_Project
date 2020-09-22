@@ -1,1 +1,8 @@
 @import './reset.scss';
+@import './parsials/mixins';
+@import './modules/header.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+html, body {
+    font-family: 'Oswald', sans-serif;   
+}

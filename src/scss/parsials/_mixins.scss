@@ -1,0 +1,6 @@
+@mixin text-header ($size) {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: $size;
+    font-weight: 400;
+}
