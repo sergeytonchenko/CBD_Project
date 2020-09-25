@@ -53,6 +53,20 @@
         
     }
 
+    .content {
+
+        &__title {
+            @include text-about (24px, 2px);
+        }
+
+        &__text {
+            font-size: 18px;
+            color: #6e774a;
+            line-height: 2rem;
+        }
+
+    }
+
 
 
 }
