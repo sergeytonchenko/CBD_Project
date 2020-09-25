@@ -39,8 +39,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a, a:hover {
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus { 
   text-decoration: none;
   cursor: pointer;
+  color: #fff !important;
 }
 

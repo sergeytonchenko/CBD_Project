@@ -1,7 +1,69 @@
 .header {
+    position: relative;
     height: 1080px;
     background-image: url(../img/header_bg.png);
-    background-position: top;
+    background-position: top; 
+    background-size: contain;
+    background-repeat: no-repeat;       
+    
+    @media screen and (max-width: 1199px) {
+
+    }
+
+    &__aside {
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        @include text-header (26px);
+        transform: rotate(270deg);
+        
+        &::before {
+            display: block;
+            position: absolute;
+            bottom: 50%;
+            left: -114px;
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #fff;
+        }
+    }
+
+    &__content {        
+        text-align: end;
+
+        @media screen and (max-width: 1199px) {
+            padding: 5rem 0;
+        }
+    }
+
+    &__title {
+        @include text-header (55px);	
+        text-shadow: 0 0 40px rgba(0,0,0,.5);
+        letter-spacing: 13px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 30px;;
+        }
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 300;        
+        letter-spacing: 5px;
+        color: #ffffff;
+        margin-bottom: 65px;
+    }
+
+    &__btn {
+        @include text-header (20px);
+        width: 270px;
+	    height: 70px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        margin-bottom: 30px;
+    }
 }
 
 .nav {
@@ -9,19 +71,9 @@
 
     h3 {
         @include text-header (30px);
-    }
+    } 
     
-    &__list {
-        padding-left: 60px;
-    }
-    
-    &__item {
-        position: relative;
-        margin-right: 45px;
-    
-        &:last-child {
-            margin-right: 0;
-        }
+    &__item {         
     
         &:hover .nav__link {
             color: #ffffff;            
@@ -43,7 +95,8 @@
     
     &__link {
         @include text-header (16px);
-        letter-spacing: 2px;
+        letter-spacing: 2px; 
+        position: relative;       
     
         &::after {
             position: absolute;
@@ -62,12 +115,17 @@
 
         .toolbar {
 
-            &__item {                
-
+            &__item {
+                
+                & i {
+                    color: #ffffff;
+                    margin-right: 5px;
+                }
             }
 
             &__link {
                 @include text-header (16px);
+                letter-spacing: 2px;
             }
         }
 
