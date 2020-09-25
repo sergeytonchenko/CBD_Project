@@ -1,0 +1,58 @@
+.about {
+
+    height: 1433px;
+
+    &__trust {
+        position: relative;
+        margin: 7rem auto;
+        text-align: center;
+    }
+
+    &__tabs {
+        position: relative;
+
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 88%;
+            background-color: #ced6af;
+            z-index: -1;
+        }        
+    }
+    
+    &__item {
+        border-bottom: 2px solid #000;
+        padding: 0 1rem 0.5rem;
+
+    }
+
+    &__link {
+        @include text-about (30px, 5px);
+    }
+
+    .trust {
+
+        &__title {
+            position: absolute;
+            top: 25%;
+            left: 38%;
+            @include text-about (24px, 0);	
+            color: #1c1c1b;
+            letter-spacing: 4px;
+        }
+
+        &__logos {
+            position: absolute;            
+            bottom: 19%;
+            left: 27%;            
+        }
+
+        
+    }
+
+
+
+}

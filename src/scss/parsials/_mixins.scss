@@ -1,6 +1,15 @@
-@mixin text-header ($size) {
+@mixin text-header ($size, $spacing) {
     color: #fff;
     text-transform: uppercase;
     font-size: $size;
     font-weight: 400;
+    letter-spacing: $spacing;
+}
+
+@mixin text-about ($size, $spacing) {
+    color: #000;
+    text-transform: uppercase;
+    font-size: $size;
+    font-weight: 400;
+    letter-spacing: $spacing;
 }

@@ -1,20 +1,16 @@
 .header {
     position: relative;
-    height: 1080px;
+    height: 100vh;    
     background-image: url(../img/header_bg.png);
     background-position: top; 
-    background-size: contain;
-    background-repeat: no-repeat;       
-    
-    @media screen and (max-width: 1199px) {
-
-    }
+    background-size: cover;
+    background-repeat: no-repeat; 
 
     &__aside {
         position: absolute;
         bottom: 200px;
         left: 0;
-        @include text-header (26px);
+        @include text-header (26px, 0);
         transform: rotate(270deg);
         
         &::before {
@@ -28,19 +24,14 @@
             background-color: #fff;
         }
     }
-
-    &__content {        
-        text-align: end;
-
-        @media screen and (max-width: 1199px) {
-            padding: 5rem 0;
-        }
+    
+    &__content {
+        padding: 50% 0;
     }
 
     &__title {
-        @include text-header (55px);	
-        text-shadow: 0 0 40px rgba(0,0,0,.5);
-        letter-spacing: 13px;
+        @include text-header (55px, 13px);	
+        text-shadow: 0 0 40px rgba(0,0,0,.5);        
         margin-bottom: 20px;
 
         @media screen and (max-width: 1199px) {
@@ -57,7 +48,7 @@
     }
 
     &__btn {
-        @include text-header (20px);
+        @include text-header (20px, 0);
         width: 270px;
 	    height: 70px;
         background-color: transparent;
@@ -70,7 +61,7 @@
     border-bottom: 1px solid #fff;
 
     h3 {
-        @include text-header (30px);
+        @include text-header (30px, 0);
     } 
     
     &__item {         
@@ -94,8 +85,7 @@
     }
     
     &__link {
-        @include text-header (16px);
-        letter-spacing: 2px; 
+        @include text-header (16px, 2px);         
         position: relative;       
     
         &::after {
@@ -116,6 +106,7 @@
         .toolbar {
 
             &__item {
+                padding-left: 76px;
                 
                 & i {
                     color: #ffffff;
@@ -124,8 +115,7 @@
             }
 
             &__link {
-                @include text-header (16px);
-                letter-spacing: 2px;
+                @include text-header (16px, 2px);                
             }
         }
 
