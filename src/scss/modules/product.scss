@@ -1,9 +1,21 @@
+.product-title {
+    text-align: center;
+    margin: 7.5rem 0 5rem;
+
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #1c1c1b;
+        letter-spacing: 6px;
+    }
+}
+
 .product-block {
 
     &__main {
         width: 607px;
         height: 430px;
-        background-color: #f7f8f3;
+        background-color: #ffffff;
         border: solid 1px #ced6af;    
     }
 
@@ -75,4 +87,25 @@
             background-color: #fff;
         }
     }
+}
+.owl-nav {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+
+.owl-prev {
+    background-image: url(../img/left.svg) !important;
+    background-size: cover;
+    width: 40px;
+    height: 20px;
+    margin-right: 3.5rem;
+        
+}
+
+.owl-next {
+    background-image: url(../img/right.svg) !important;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 20px;   
 }

@@ -7,11 +7,15 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       loop: true,
       nav: true,
+      navText: ["",""],
       items: 3,
       margin: 10, 
       autoplay: false,
-      autoplayTimeout: 2000,
-      responsiveClass: true,
-      autoplayHoverPause: false 
+      autoplayTimeout: 2000            
     });
+
+    $('.accordion-header').click(function(){
+      $('.accordion-header').removeClass('active');
+      $(this).addClass("active");      
+    })
   });
