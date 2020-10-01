@@ -65,7 +65,7 @@
 
     .owl-nav {
         position: absolute;
-        bottom: 15px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;        
@@ -76,6 +76,7 @@
         height: 100px;
         width: 100px;
         border: 1px solid #fff !important;
+        border-bottom: none !important;
         background-size: auto;
         background-position: center !important;
         background-repeat: no-repeat !important; 

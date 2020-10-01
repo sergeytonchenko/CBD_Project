@@ -19,6 +19,7 @@ $(document).ready(function(){
       nav: true,
       navText: ["",""],
       items: 1,
+      dots: false,
       margin: 10, 
       autoplay: false,
       autoplayTimeout: 2000            
