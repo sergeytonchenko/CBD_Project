@@ -88,24 +88,27 @@
         }
     }
 }
-.owl-nav {
-    margin-top: 3.5rem;
-    text-align: center;
-}
 
+.slide-one {
 
-.owl-prev {
-    background-image: url(../img/left.svg) !important;
-    background-size: cover;
-    width: 40px;
-    height: 20px;
-    margin-right: 3.5rem;
-        
-}
-
-.owl-next {
-    background-image: url(../img/right.svg) !important;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 20px;   
+    .owl-nav {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+    
+    
+    .owl-prev {
+        background-image: url(../img/left.svg) !important;
+        background-size: cover;
+        width: 40px;
+        height: 20px;
+        margin-right: 3.5rem;        
+    }
+    
+    .owl-next {
+        background-image: url(../img/right.svg) !important;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 20px;   
+    }
 }

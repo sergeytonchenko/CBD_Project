@@ -1,3 +1,6 @@
+.question {
+    margin-bottom: 9.5rem;
+}
 .question-title {
     text-align: center;
     margin-top: 8.2rem;
@@ -21,6 +24,10 @@
         border-right: none;        
         position: relative;
         cursor: pointer;
+
+        &:last-child {
+            border-bottom: 2px solid #eaedde;
+        }
 
         p {
             margin-left: 2rem;
