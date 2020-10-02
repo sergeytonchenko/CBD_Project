@@ -23,6 +23,7 @@
     }
 
     &-links {
+        position: relative;
         margin-top: 4rem;
     }
 
@@ -36,15 +37,86 @@
         }
 
         &:hover &__link {
-            color: #4d5334;
+            color: #313521;
             font-weight: 400;
             cursor: pointer;
             
         }
     }
 
+    &-social {        
+
+        span {
+            position: absolute;
+            bottom: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 55px;
+            width: 2px;
+            background-color: #6e774a;
+        }
+    }
+
     &-social__link {
         color: #6e774a;
-        font-size: 22px;        
+        font-size: 22px;
+        
+        &:hover {
+            color: #313521;
+        }
+    }
+
+    &-copyright {
+
+        margin: 4rem 0;
+        text-align: center;
+
+        &__text {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #6e774a;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.form {
+
+    margin-top: 1.5rem;
+
+    &-title__text {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #1c1c1b;
+        letter-spacing: 2.5px;
+    }
+
+    &-box {
+        margin-top: 1.5rem;
+        width: 100%;
+        border: 1px solid #6e774a;        
+    }
+
+    &-box__email {
+        padding: 1rem;
+        width: 80%;
+        letter-spacing: 2px;        
+
+        &::placeholder {
+            font-size: 16px;
+            color: #6e774a;
+            letter-spacing: 3px;    
+        }
+    }
+
+    &-box__btn {        
+        width: 20%;
+        height: 45px;        
+        border-left: 1px solid #6e774a;
+        background-color: transparent;
+        background-image: url(../img/right_green.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
     }
 }
