@@ -25,6 +25,7 @@ $(document).ready(function(){
       autoplayTimeout: 2000            
     });
 
+    //accordion
     $('.accordion-header').click(function(){
       $('.accordion-header').removeClass('active');
       $(this).addClass("active");      
@@ -51,5 +52,24 @@ $(document).ready(function(){
       let selectContent = $(this).attr("id");      
       $(selectContent).fadeIn();    
     })
+
+    //validate email
+    $(".form-box").validate({
+      rules: {        
+        user_email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {        
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      },
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
 
   });
