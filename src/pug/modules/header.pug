@@ -1,5 +1,7 @@
 header#Home.header
   aside.header__aside CBD Potion health
+  span.page-anchor
+    i.fas.fa-chevron-circle-up
   .container-fluid
     .row
       .col-12        
@@ -26,7 +28,9 @@ header#Home.header
                 i.fas.fa-search 
                 a(href="#").toolbar__link Search
               li.toolbar__item
-                a(href="#").toolbar__link Cart
+                a(href="#").toolbar__link
+                  | Cart 
+                  span.cart  (0)
       .col-12
         section
           .container
