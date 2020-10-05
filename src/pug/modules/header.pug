@@ -1,4 +1,4 @@
-header.header
+header#Home.header
   aside.header__aside CBD Potion health
   .container-fluid
     .row
@@ -7,13 +7,15 @@ header.header
           .col-3
             ul.nav__list.d-flex.justify-content-between
               li.nav__item
-                a.nav__link Home
+                a.nav__link(href="#Home") Home
               li.nav__item 
-                a.nav__link Produts
+                a.nav__link(href="#Faqs") Faqs
               li.nav__item 
-                a.nav__link Faqs
+                a.nav__link(href="#Products") Products
               li.nav__item 
-                a.nav__link Contact Us
+                a.nav__link(href="#Posts") Posts
+              li.nav__item 
+                a.nav__link(href="#Contact") Contact Us
           .col-6.d-flex.justify-content-center
             h3 CBD
           .col-3
@@ -30,13 +32,17 @@ header.header
           .container
             .row
               .col-7.offset-5
-                .header__content.d-flex.flex-column.align-items-end.justify-content-center
+                .header-content.d-flex.flex-column.align-items-end.justify-content-center
                   h1.header__title Enhancing Life
                   h1.header__title Excelling in Care
                   h5.header__subtitle Choose Wisely. Choose CBD.
-                  button.header__btn Start Shopping
+                  button.header__btn 
+                    | Start Shopping
+                    span
                   .header__more
-                    a(href="#") See all products
+                    a.header__link(href="#") 
+                      | See all products
+                      span
 
 
 

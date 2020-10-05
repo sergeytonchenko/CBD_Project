@@ -17,15 +17,24 @@
             width: 85%;
             background-color: #ced6af;
             z-index: 0;
-        }        
+        }
+        
+        & li:not(.item-active) {
+            cursor: pointer;
+            color: #ced6af;    
+          }
+
+          & li:not(.item-active):hover {            
+            color: #8b9078;    
+          }
     }
     
-    &__item {
+    .item-active {
         z-index: 1;
         border-bottom: 2px solid #000;
     }
 
-    &__link {
+    &__item {
         @include text-about (30px, 5px);
     }
 
@@ -44,9 +53,7 @@
             position: absolute;            
             bottom: 19%;
             left: 27%;            
-        }
-
-        
+        }        
     }
 
     .content {
@@ -75,6 +82,10 @@
 
         &__text-wrap {
             margin-bottom: 2.5rem;            
+        }
+
+        &-picture img {
+            margin-bottom: 28px;
         }
 
     }
