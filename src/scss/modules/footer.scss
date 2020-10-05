@@ -92,9 +92,16 @@
     }
 
     &-box {
+        position: relative;
         margin-top: 1.5rem;
         width: 100%;
-        border: 1px solid #6e774a;        
+        border: 1px solid #6e774a; 
+        
+        label {
+            position: absolute;
+            bottom: -2.5rem;
+            left: 1rem;
+        }
     }
 
     &-box__email {

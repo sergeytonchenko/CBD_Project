@@ -2,6 +2,8 @@ import './css/style.css';
 import './scss/main.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
+import 'jquery';
+import 'jquery-validation';
 
 $(document).ready(function(){
     $('.slide-one').owlCarousel({
@@ -51,10 +53,10 @@ $(document).ready(function(){
       
       let selectContent = $(this).attr("id");      
       $(selectContent).fadeIn();    
-    })
+    });
 
     //validate email
-    $(".form-box").validate({
+    $('.form-box').validate({
       rules: {        
         user_email: {
           required: true,
@@ -62,7 +64,7 @@ $(document).ready(function(){
         }
       },
       messages: {        
-        email: {
+        user_email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com"
         }
