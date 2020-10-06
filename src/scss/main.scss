@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import './reset.scss';
+@import './reset';
 @import './parsials/mixins';
 @import './modules/header';
 @import './modules/about';
@@ -7,6 +7,7 @@
 @import './modules/questions';
 @import './modules/posts';
 @import './modules/footer';
+@import './media';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
 
 html, body {
