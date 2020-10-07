@@ -37,10 +37,25 @@ $(document).ready(function(){
     loop: true,
     nav: true,
     navText: ["",""],
-    items: 3,
-    margin: 10, 
+    items: 3,     
     autoplay: false,
-    autoplayTimeout: 2000            
+    autoplayTimeout: 2000,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+            margin: 10
+        },
+        768:{
+            items:2,
+            nav:true
+        },
+        1200:{
+            items:3,
+            nav:true            
+        }
+    }            
   });
 
   //slider-two

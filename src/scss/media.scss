@@ -1,18 +1,33 @@
-@media (min-width: 576px) { 
+@media (max-width: 1199px) {
+    .toolbar__item {
+        padding-left: 25px;
+    }
 
- }
+    .header__title {
+        font-size: 30px;
+    }
 
+    .header__subtitle {
+        font-size: 24px;        
+        margin-bottom: 40px;
+    }
 
-@media (min-width: 768px) { 
+    .header__aside {
+        font-size: 20px;
+        bottom: 150px;
 
- }
+        &::before {            
+            width: 70px;
+            left: -84px;            
+        }
+    }
+}
+@media (max-width: 991px) {
 
-
-@media (min-width: 992px) { 
+}
+@media (max-width: 767px) {
     
- }
+} 
+@media (max-width: 575px) {
 
-
-@media (min-width: 1200px) {
-     
 }
