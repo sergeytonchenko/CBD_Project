@@ -1,13 +1,13 @@
 header#Home.header
-  aside.header__aside CBD Potion health
+  aside.header__aside.d-none.d-md-block CBD Potion health
   span.page-anchor
     i.fas.fa-chevron-circle-up
   .container-fluid
     .row
       .col-12        
         nav.nav.d-flex.justify-content-between.align-items-center.py-4
-          .col-xl-4.col-lg-5.col-sm-2            
-            .nav-burger.d-lg-none.d-sm-block
+          .col-xl-4.col-lg-5.col-md-2.col-sm-2.col-6         
+            .nav-burger.d-lg-none.d-md-block
               input(type='checkbox')
               span
               span
@@ -23,7 +23,7 @@ header#Home.header
                   a.nav-burger__link(href="#Posts") Posts
                 li.nav-burger__item 
                   a.nav-burger__link(href="#Contact") Contact Us
-            ul.nav__list.d-lg-flex.d-sm-none.justify-content-between
+            ul.nav__list.d-lg-flex.d-none.justify-content-between
               li.nav__item
                 a.nav__link(href="#Home") Home
               li.nav__item 
@@ -34,10 +34,10 @@ header#Home.header
                 a.nav__link(href="#Posts") Posts
               li.nav__item 
                 a.nav__link(href="#Contact") Contact Us
-          .col-xl-4.col-lg-2.col-sm-5.d-flex.justify-content-center
+          .col-xl-4.col-lg-2.col-md-5.col-sm-2.col-6.d-flex.justify-content-sm-center.justify-content-end
             h3 CBD
-          .col-xl-4.col-lg-5.col-sm-5
-            ul.nav__toolbar.toolbar.d-flex.justify-content-lg-end
+          .col-xl-4.col-lg-5.col-md-5.col-sm-7.col-12
+            ul.nav__toolbar.toolbar.d-flex.justify-content-sm-end.justify-content-between.mt-4.mt-sm-0
               li.toolbar__item
                 a(href="#").toolbar__link Login
               li.toolbar__item.d-flex
@@ -51,7 +51,7 @@ header#Home.header
         section
           .container
             .row
-              .col-lg-7.offset-lg-5.col-sm-9.offset-sm-3
+              .col-lg-7.offset-lg-5.col-md-9.offset-md-3.col-sm-12.offset-sm-0
                 .header-content.d-flex.flex-column.align-items-end.justify-content-center
                   h1.header__title Enhancing Life
                   h1.header__title Excelling in Care

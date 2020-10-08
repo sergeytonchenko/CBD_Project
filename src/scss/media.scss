@@ -29,5 +29,11 @@
     
 } 
 @media (max-width: 575px) {
+    .toolbar__item {
+        padding-left: 0;
+    }
 
+    .header-content {
+        padding: 24vh 0;
+    }
 }
