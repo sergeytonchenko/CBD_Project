@@ -145,12 +145,42 @@
         
         & i {
             color: #ffffff;
-            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        &:hover .toolbar__link {
+            color: #ffffff;            
+        }
+        
+        &:hover .toolbar__link::after {
+            width: 100%;
+        }
+
+        &:active .toolbar__link { 
+            color: #ffffffa2;
+        }
+    
+        &:active .toolbar__link::after { 
+            transform: scaleX(0.7);
+            background-color: #ffffffa2;
         }
     }
 
     &__link {
-        @include text-header (16px, 2px);                
+        @include text-header (16px, 2px); 
+        position: relative;       
+    
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            left: 0;
+            bottom: -5px;
+            height: 2px;
+            width: 0;            
+            background-color: #ffffff;            
+            transition: 0.4s width ease;
+        }               
     }
 }
 
