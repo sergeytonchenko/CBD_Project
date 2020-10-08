@@ -34,6 +34,16 @@
     }
 
     .header-content {
-        padding: 24vh 0;
+        padding: 10vh 0;
+        text-align: center;
+    }
+
+    .header__title, .header__subtitle {
+        line-height: 40px;
+    }
+
+    .header__btn {
+        width: 100%;
+        padding: 1.5rem 5rem 1.5rem 2rem;
     }
 }
