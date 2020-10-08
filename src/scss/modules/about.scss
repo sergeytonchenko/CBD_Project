@@ -5,6 +5,26 @@
         margin: 7rem auto;        
     }
 
+    .trust {
+
+        &__title {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include text-about (24px, 0);	
+            color: #1c1c1b;
+            letter-spacing: 4px;
+        }
+
+        &__logos {
+            position: absolute;            
+            bottom: 19%;
+            left: 50%;
+            transform: translateX(-50%);            
+        }        
+    }
+
     &__tabs {
         position: relative;
 
@@ -36,60 +56,39 @@
 
     &__item {
         @include text-about (30px, 5px);
+    }    
+
+}
+
+.content {
+
+    margin-top: 5rem;
+
+    &-wrap {
+        padding-top: 2rem;
+        padding-bottom: 2rem;            
     }
 
-    .trust {
-
-        &__title {
-            position: absolute;
-            top: 25%;
-            left: 38%;
-            @include text-about (24px, 0);	
-            color: #1c1c1b;
-            letter-spacing: 4px;
-        }
-
-        &__logos {
-            position: absolute;            
-            bottom: 19%;
-            left: 27%;            
-        }        
+    &__title {
+        @include text-about (24px, 5px);
+        line-height: 2.5rem;            
     }
 
-    .content {
-
-        margin-top: 5rem;
-
-        &-wrap {
-            padding-top: 2rem;
-            padding-bottom: 2rem;            
-        }
-
-        &__title {
-            @include text-about (24px, 5px);
-            line-height: 2.5rem;            
-        }
-
-        &__title-wrap {
-            padding-right: 10rem;            
-        }
-
-        &__text {
-            font-size: 18px;
-            color: #6e774a;
-            line-height: 2.5rem;            
-        }
-
-        &__text-wrap {
-            margin-bottom: 2.5rem;            
-        }
-
-        &-picture img {
-            margin-bottom: 28px;
-        }
-
+    &__title-wrap {
+        padding-right: 10rem;            
     }
 
+    &__text {
+        font-size: 18px;
+        color: #6e774a;
+        line-height: 2.5rem;            
+    }
 
+    &__text-wrap {
+        margin-bottom: 2.5rem;            
+    }
 
+    &-picture img {
+        margin-bottom: 28px;
+    }
 }

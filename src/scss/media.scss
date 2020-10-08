@@ -21,8 +21,37 @@
             left: -84px;            
         }
     }
+
+    .about__trust {
+        margin: 4rem auto;
+    }
+
+    .about__tabs::after {
+        width: 88%;
+    }
+
 }
 @media (max-width: 991px) {
+
+    .about__item {
+        font-size: 24px;
+    }
+
+    .about__tabs::after {
+        width: 91%;
+    }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .content__text-wrap {
+        margin-bottom: 1.5rem;
+    }
+
+    .content-picture img {
+        width: 100%;
+    }
 
 }
 @media (max-width: 767px) {
