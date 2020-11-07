@@ -19,7 +19,7 @@ module.exports = {
     devServer: {
       contentBase: path.join(__dirname, 'dist'),
       compress: true,
-      port: 9000
+      port: 5000
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -87,7 +87,7 @@ module.exports = {
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
+              name: 'img/[name].[ext]',
             }
           }
         ],
